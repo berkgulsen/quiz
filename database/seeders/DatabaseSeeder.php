@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\User::factory(5)->create();
+        \App\Models\Quiz::factory(10)->create();
         User::insert([
             'name'=>'Berk Gülşen',
             'email'=>'berkglsn48@gmail.com',
